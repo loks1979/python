@@ -1,12 +1,15 @@
 print('You are in my pet store')
 
+#Function
 def feed(pet):
+  #Condition
   if pet['hungry'] == True:
     pet['weight']=pet['weight'] + 0.5
     pet['hungry']=False
   else:
     print ('Pet Not Hungry')
 
+#Dictonary
 cat={
   'name':'Fluffy',
   'age':5,
@@ -23,8 +26,12 @@ mouse={
   'photo':'<:3=~~',
 }
 
-pets = [cat, mouse]
+#List
+pets = []
+pets.append(cat)
+pets.append(mouse)
 
+#Looping
 for pet in pets:
   print (pet['hungry'], pet['weight'])
 
