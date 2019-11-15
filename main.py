@@ -11,15 +11,15 @@ def feed(pet):
 
 #Dictonary
 cat={
-  'name':'Fluffy',
-  'age':5,
+  'name':"Fluffy",
+  'age':5,  
   'weight':2.5,
   'hungry':True,
   'photo':'(=^0.0^=)',
 }
 
 mouse={
-  'name':'Taily',
+  'name':"Taily",
   'age':5,
   'weight':1.5,
   'hungry':False,
@@ -31,12 +31,19 @@ pets = []
 pets.append(cat)
 pets.append(mouse)
 
+#Accessing list by Index
+newPet = pets[0]
+print (newPet['name']) #Cat
+
+newPet = pets[1]
+print (newPet['name']) #Mouse
+
 #Looping
 for pet in pets:
-  print (pet['hungry'], pet['weight'])
+  print (pet['name'], pet['hungry'], pet['weight'])
 
 for pet in pets:
   feed(pet)
 
 for pet in pets:
-  print (pet['hungry'], pet['weight'])
+  print (pet['name'], pet['hungry'], pet['weight'])
